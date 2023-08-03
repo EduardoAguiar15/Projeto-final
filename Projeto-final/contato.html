@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="shortcut icon" href="./assets/icone.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="nav nav-pills nav-fill">
+    <a class="nav-link" href="principal.html">HOME</a>
+    <a class="nav-link" href="sobre.html">SOBRE</a>
+    <a class="nav-link" href="projetos.html">PROJETOS</a>
+    <a class="nav-link" href="contato.html">CONTATO</a>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./assets/sydney.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/landing.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/jogovelha.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="contato">
+    <div class="form">
+      <form action="#">
+        <div class="form-header">
+          <div class="title">
+            <h1>Contato</h1>
+          </div>
+          <div class="login-button">
+            <button><a href="#">Entrar</a></button>
+          </div>
+        </div>
+        <div class="input-group">
+          <div class="input-box">
+            <label for="firstname">Primeiro nome</label>
+            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+          </div>
+
+          <div class="input-box">
+            <label for="lastname">Sobrenome</label>
+            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+          </div>
+
+          <div class="input-box">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+          </div>
+
+          <div class="input-box">
+            <label for="number">Celular</label>
+            <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+          </div>
+
+          <div class="input-box">
+            <label for="password">Senha</label>
+            <input id="password" type="password" name="password" placeholder="Digite a sua Senha" required>
+          </div>
+
+          <div class="input-box">
+            <label for="password">Confirme sua senha</label>
+            <input id="password" type="password" name="confirmpassword" placeholder="Digite a sua Senha" required>
+          </div>
+        </div>
+
+        <div class="gender-inputs">
+          <div class="gender-title">
+            <h6>Gênero</h6>
+          </div>
+
+          <div class="gender-group">
+            <div class="gender-input">
+              <input type="radio" id="female" name="gender">
+              <label for="female">Feminino</label>
+            </div>
+
+            <div class="gender-input">
+              <input type="radio" id="male" name="gender">
+              <label for="male">Masculino</label>
+            </div>
+
+            <div class="gender-input">
+              <input type="radio" id="others" name="gender">
+              <label for="others">Outros</label>
+            </div>
+          </div>
+        </div>
+        <div class="continue-button">
+          <button><a href="#">Continuar</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
